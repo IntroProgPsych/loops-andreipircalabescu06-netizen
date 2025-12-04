@@ -20,3 +20,17 @@
 
 # Write your code here:
 numbers = [3, 8, 12, 7, 9, 10, 21, 30]
+
+def main():
+	even_numbers = []
+	total = 0
+	for n in numbers:
+		if n % 2 == 0:
+			even_numbers.append(n)
+			total += 1
+
+	print(f"Even numbers: {even_numbers}")
+	print(f"Total: {total}")
+
+if __name__ == "__main__":
+	main()
