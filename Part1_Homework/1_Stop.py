@@ -1,4 +1,5 @@
 # https://www.w3schools.com/python/python_while_loops.asp
+# https://www.w3schools.com/python/python_while_loops.asp
 
 # Write a program that asks the user for a target number.
 # Using a while loop, repeatedly ask the user for numbers and keep
@@ -22,3 +23,23 @@
 #   - Stop only when total >= target
 
 # Write your code here:
+
+def main():
+	try:
+		target = int(input("Target: "))
+	except Exception:
+		return
+
+	total = 0
+	while total < target:
+		try:
+			n = int(input("Number: "))
+		except Exception:
+			continue
+		total += n
+
+	print(f"Total reached: {total}")
+
+
+if __name__ == "__main__":
+	main()

@@ -10,4 +10,14 @@
 # 3
 # 4
 
-# Write your code here:
+def main():
+	try:
+		n = int(input("Upper limit: "))
+	except Exception:
+		return
+	for i in range(1, n):
+		print(i)
+
+if __name__ == "__main__":
+	main()
+
